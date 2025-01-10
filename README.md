@@ -3,6 +3,7 @@
 [![PayPal.Me][paypal_me_shield]][paypal_me]
 [![ko_fi][ko_fi_shield]][ko_fi_me]
 [![buymecoffee][buy_me_coffee_shield]][buy_me_coffee_me]
+[![patreon][patreon_shield]][patreon_me]
 <!-- anashost_support_badges_end -->
 <!-- 
 ```diff
@@ -289,3 +290,8 @@ https://img.shields.io/badge/revolut-FFFFFF?style=for-the-badge&logo=revolut&log
 https://img.shields.io/badge/Buy%20Me%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black
 
 [buy_me_coffee_me]: https://www.buymeacoffee.com/anasbox
+
+[patreon_shield]: 
+https://img.shields.io/badge/patreon-404040?style=for-the-badge&logo=patreon&logoColor=white
+
+[patreon_me]:  https://patreon.com/AnasBox
