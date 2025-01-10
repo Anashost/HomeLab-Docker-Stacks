@@ -1,4 +1,23 @@
+<!-- anashost_support_badges_start -->
+[![Revolut.Me][revolut_me_shield]][revolut_me]
+[![PayPal.Me][paypal_me_shield]][paypal_me]
+[![ko_fi][ko_fi_shield]][ko_fi_me]
+[![buymecoffee][buy_me_coffee_shield]][buy_me_coffee_me]
+<!-- anashost_support_badges_end -->
+<!-- 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+-->
+
 # HomeLab Docker Stacks
+
+>This repository contains a collection of Docker Compose configurations for setting up and managing various services in a home lab environment.
+>Each stack is tailored for ease of use, scalability, and maintainability, with detailed descriptions and customizable options.
 
 ```yaml
                ##         .
@@ -9,18 +28,13 @@
       \______ o           __/
         \    \         __/
          \____\_______/
-
-  _    _                          _           _         _____             _             
- | |  | |                        | |         | |       |  __ \           | |            
- | |__| | ___  _ __ ___   ___    | |     __ _| |__     | |  | | ___   ___| | _____ _ __ 
- |  __  |/ _ \| '_ ` _ \ / _ \   | |    / _` | '_ \    | |  | |/ _ \ / __| |/ / _ \ '__|
- | |  | | (_) | | | | | |  __/   | |___| (_| | |_) |   | |__| | (_) | (__|   <  __/ |   
- |_|  |_|\___/|_| |_| |_|\___|   |______\__,_|_.__/    |_____/ \___/ \___|_|\_\___|_|   
-                                                                                        
-                                                                                        
+  _    _                         _           _        _____             _             
+ | |  | |                       | |         | |      |  __ \           | |            
+ | |__| | ___  _ __ ___   ___   | |     __ _| |__    | |  | | ___   ___| | _____ _ __ 
+ |  __  |/ _ \| '_ ` _ \ / _ \  | |    / _` | '_ \   | |  | |/ _ \ / __| |/ / _ \ '__|
+ | |  | | (_) | | | | | |  __/  | |___| (_| | |_) |  | |__| | (_) | (__|   <  __/ |   
+ |_|  |_|\___/|_| |_| |_|\___|  |______\__,_|_.__/   |_____/ \___/ \___|_|\_\___|_|   
 ```
-
-This repository contains a collection of Docker Compose configurations for setting up and managing various services in a home lab environment. Each stack is tailored for ease of use, scalability, and maintainability, with detailed descriptions and customizable options.
 
 ## Available Stacks
 
@@ -257,3 +271,21 @@ This repository contains a collection of Docker Compose configurations for setti
 </details>
 
 ---
+
+[paypal_me_shield]: https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white
+
+[paypal_me]: https://paypal.me/anasboxsupport
+
+[revolut_me_shield]:
+https://img.shields.io/badge/revolut-FFFFFF?style=for-the-badge&logo=revolut&logoColor=black
+
+[revolut_me]: https://revolut.me/anas4e
+
+[ko_fi_shield]: https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white
+
+[ko_fi_me]: https://ko-fi.com/anasbox
+
+[buy_me_coffee_shield]: 
+https://img.shields.io/badge/Buy%20Me%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black
+
+[buy_me_coffee_me]: https://www.buymeacoffee.com/anasbox
