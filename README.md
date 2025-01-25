@@ -40,6 +40,26 @@
 ## Available Stacks
 
 <details>
+  <summary><strong>Home Assistant</strong> - Home Automation</summary>
+  Home Assistant is an open-source home automation platform that lets you control, automate, and monitor smart devices in one centralized system.
+
+  ```yaml
+  services:
+    homeassistant:
+      container_name: homeassistant
+      ## image: "ghcr.io/home-assistant/home-assistant:2024.7.4"  ## Specific version
+      image: "ghcr.io/home-assistant/home-assistant:stable"       ## Latest version
+      volumes:
+        - /home/user/homeassistant/config:/config
+        - /etc/localtime:/etc/localtime:ro
+        - /run/dbus:/run/dbus:ro
+      restart: unless-stopped
+      privileged: true
+      network_mode: host
+  ```
+</details>
+
+<details>
   <summary><strong>Plex</strong> - Media Server</summary>
   Plex is a powerful media server solution that organizes your media and allows streaming to various devices.
 
