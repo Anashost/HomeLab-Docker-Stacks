@@ -108,6 +108,39 @@
 </details>
 
 <details>
+  <summary><strong>AdGuard Home</strong> - DNS-based Ad Blocking</summary>
+  AdGuard Home is a network-wide ad and tracker blocking DNS server.
+
+  ```yaml
+  version: '3.8'
+  services:
+    adguardhome:
+      image: adguard/adguardhome:latest
+      container_name: adguardhome
+      restart: unless-stopped
+      volumes:
+        - adguard-workdir:/opt/adguardhome/work  # Docker volume for work directory
+        - adguard-confdir:/opt/adguardhome/conf  # Docker volume for configuration directory
+      ports:
+        - 53:53/tcp
+        - 53:53/udp
+        - 784:784/udp
+        - 853:853/tcp
+        - 3000:3000/tcp
+        - 80:80/tcp
+        - 443:443/tcp
+      networks:
+        - adguard_net
+  volumes:
+    adguard-workdir:
+    adguard-confdir:
+  networks:
+    adguard_net:
+      driver: bridge
+  ```
+</details>
+
+<details>
   <summary><strong>Pi-hole</strong> - Network-wide Ad Blocking</summary>
   Pi-hole is a DNS sinkhole that protects your devices from unwanted ads and trackers.
 
@@ -217,40 +250,7 @@
 </details>
 
 <details>
-  <summary><strong>AdGuard Home</strong> - DNS-based Ad Blocking</summary>
-  AdGuard Home is a network-wide ad and tracker blocking DNS server.
-
-  ```yaml
-  version: '3.8'
-  services:
-    adguardhome:
-      image: adguard/adguardhome:latest
-      container_name: adguardhome
-      restart: unless-stopped
-      volumes:
-        - adguard-workdir:/opt/adguardhome/work  # Docker volume for work directory
-        - adguard-confdir:/opt/adguardhome/conf  # Docker volume for configuration directory
-      ports:
-        - 53:53/tcp
-        - 53:53/udp
-        - 784:784/udp
-        - 853:853/tcp
-        - 3000:3000/tcp
-        - 80:80/tcp
-        - 443:443/tcp
-      networks:
-        - adguard_net
-  volumes:
-    adguard-workdir:
-    adguard-confdir:
-  networks:
-    adguard_net:
-      driver: bridge
-  ```
-</details>
-
-<details>
-  <summary><strong>Code Server</strong> - Remote Development</summary>
+  <summary><strong>VSCode Remote Server</strong> - Remote Development</summary>
   Code Server allows you to run VS Code in the browser for remote development.
 
   ```yaml
