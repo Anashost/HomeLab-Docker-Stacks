@@ -101,6 +101,8 @@
           source: /srv/dev-disk-by-uuid-nas/media
           target: /media
           read_only: true
+      devices: 
+        - /dev/dri:/dev/dri ## iGPU passthrough
       restart: unless-stopped
   ```
 </details>
